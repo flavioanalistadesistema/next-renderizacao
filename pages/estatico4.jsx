@@ -9,7 +9,7 @@ export async function getStaticProps() {
     }
 }
 
-export default function Estatico2(props) {
+export default function Estatico4(props) {
 
     function renderizarProdutos() {
         return props.resp.map(produto => {
