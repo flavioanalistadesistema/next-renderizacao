@@ -1,11 +1,15 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
+function numeroAleartorio(min = 1, max = 1000) {
+    return parseInt(Math.random() * (max - min + 1)) + min
+}
+
 export default function handler(req, res) {
     res.status(200).json([
-            {id: 1, nome: 'Caneta', preco: 5.00},
-            {id: 2, nome: 'Borracha', preco: 2.00},
-            {id: 3, nome: 'Caderno', preco: 15.00},
-            {id: 4, nome: 'Apontador', preco: 7.50}
+            {id: numeroAleartorio(), nome: 'Caneta', preco: 5.00},
+            {id: numeroAleartorio(), nome: 'Borracha', preco: 2.00},
+            {id: numeroAleartorio(), nome: 'Caderno', preco: 15.00},
+            {id: numeroAleartorio(), nome: 'Apontador', preco: 7.50}
         ]
     )
 }
