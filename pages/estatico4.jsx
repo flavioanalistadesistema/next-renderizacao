@@ -1,4 +1,5 @@
 export async function getStaticProps() {
+    console.log('[SERVE] gerando componente ')
     const produtos = await fetch("http://localhost:3000/api/produtos")
     const resp = await produtos.json()
 
@@ -10,6 +11,7 @@ export async function getStaticProps() {
 }
 
 export default function Estatico4(props) {
+    console.log('[CLIENT] renderizando conteudo')
 
     function renderizarProdutos() {
         return props.resp.map(produto => {
