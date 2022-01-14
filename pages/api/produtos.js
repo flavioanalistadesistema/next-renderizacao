@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-function numeroAleartorio(min = 1, max = 1000) {
+function numeroAleartorio(min = 1, max = 10000) {
     return parseInt(Math.random() * (max - min + 1)) + min
 }
 

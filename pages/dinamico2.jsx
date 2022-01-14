@@ -22,7 +22,7 @@ export default function Estatico4(props) {
 
     return (
         <div>
-            <h1>Dinamico #4</h1>
+            <h1>Dinamico #2</h1>
             <ul>
                 {renderizarProdutos()}
             </ul>

@@ -1,4 +1,3 @@
-
 export function getServerSideProps() {
     console.log('[SERVER] gerando compoente dinamico' )
 
